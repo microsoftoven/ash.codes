@@ -25,3 +25,49 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@layer base {
+  a {
+    transition: all 0.2s ease;
+
+    &:hover {
+      @apply text-mermaid-indigo;
+    }
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply text-gray-700;
+  }
+}
+
+@layer components {
+  .text-mermaid {
+    background: rgb(85, 240, 222);
+    background: linear-gradient(
+      90deg,
+      rgba(85, 240, 222, 1) 0%,
+      rgba(98, 196, 252, 1) 30%,
+      rgba(128, 98, 252, 1) 60%,
+      rgba(221, 98, 252, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bg-mermaid {
+    background: rgb(85, 240, 222);
+    background: linear-gradient(
+      90deg,
+      rgba(85, 240, 222, 1) 0%,
+      rgba(98, 196, 252, 1) 30%,
+      rgba(128, 98, 252, 1) 60%,
+      rgba(221, 98, 252, 1) 100%
+    );
+  }
+}
