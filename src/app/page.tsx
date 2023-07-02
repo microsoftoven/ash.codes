@@ -18,7 +18,7 @@ export default function Home() {
 
         <Type.Text>
           sometimes I do art:{" "}
-          <a href="https://instagram.com/microsoftoven" className="font-semibold">
+          <a href="https://instagram.com/microsoftoven" target="_blank" className="font-semibold">
             @microsoftoven
           </a>
         </Type.Text>
