@@ -6,14 +6,15 @@ export default function Home() {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 lg:gap-20 md:grid-rows-1 h-full items-center">
       <div className="pb-4 md:pb-8">
         <Type.Title level={1}>
-          hi, i'm <span className="text-mermaid">ash</span> 👋🏻
+          hi, i&apos;m <span className="text-mermaid">ash</span> 👋🏻
         </Type.Title>
 
         <Type.Title level={2}>senior software engineer</Type.Title>
 
         <Type.Text>
-          I'm a front end-focused full stack software engineer and I've been building projects and
-          products since 2016. I currently live in NYC with my spouse, two cats, and a dog.
+          I&apos;m a front end-focused full stack software engineer and I&apos;ve been building
+          projects and products since 2016. I currently live in NYC with my spouse, two cats, and a
+          dog.
         </Type.Text>
 
         <Type.Text>
