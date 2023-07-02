@@ -18,10 +18,61 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
     rgb(var(--background-start-rgb));
+}
+
+@layer base {
+  p,
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply text-gray-700;
+  }
+
+  a {
+    transition: all 0.2s ease;
+
+    &:hover {
+      @apply text-mermaid-indigo;
+    }
+  }
+
+  main a {
+    @apply text-mermaid-indigo;
+
+    &:hover {
+      @apply text-mermaid-magenta;
+    }
+  }
+}
+
+@layer components {
+  .text-mermaid {
+    background: rgb(85, 240, 222);
+    background: linear-gradient(
+      to right,
+      rgba(85, 240, 222, 1) 0%,
+      rgba(98, 196, 252, 1) 30%,
+      rgba(128, 98, 252, 1) 60%,
+      rgba(221, 98, 252, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bg-mermaid {
+    background: rgb(85, 240, 222);
+    background: linear-gradient(
+      90deg,
+      rgba(85, 240, 222, 1) 0%,
+      rgba(98, 196, 252, 1) 30%,
+      rgba(128, 98, 252, 1) 60%,
+      rgba(221, 98, 252, 1) 100%
+    );
+  }
 }
