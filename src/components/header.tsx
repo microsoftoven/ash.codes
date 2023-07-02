@@ -4,10 +4,6 @@ export const Header = () => (
       Ash Sandler
     </a>
 
-    <nav>
-      <a href="https://github.com/microsoftoven" target="_blank">
-        github
-      </a>
-    </nav>
+    <div>&nbsp;</div>
   </header>
 );

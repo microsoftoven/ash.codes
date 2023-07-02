@@ -18,9 +18,16 @@ export default function Home() {
         </Type.Text>
 
         <Type.Text>
-          sometimes I do art:{" "}
+          most of the time, I code:{" "}
+          <a href="https://github.com/microsoftoven" target="_blank" className="font-semibold">
+            github
+          </a>
+        </Type.Text>
+
+        <Type.Text>
+          the rest of the time, I do art:{" "}
           <a href="https://instagram.com/microsoftoven" target="_blank" className="font-semibold">
-            @microsoftoven
+            instagram
           </a>
         </Type.Text>
       </div>
